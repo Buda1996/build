@@ -1687,7 +1687,7 @@ $(INTERNAL_OTA_PACKAGE_TARGET): $(BUILT_TARGET_FILES_PACKAGE) $(DISTTOOLS)
 	   $(if $(OEM_OTA_CONFIG), -o $(OEM_OTA_CONFIG)) \
 	   $(BUILT_TARGET_FILES_PACKAGE) $@
 
-blackbox_TARGET_PACKAGE := $(PRODUCT_OUT)/blackbox-$(blackbox_VERSION).zip
+blackbox_TARGET_PACKAGE := $(PRODUCT_OUT)/BlackBox-$(blackbox_VERSION).zip
 
 .PHONY: otapackage bacon
 otapackage: $(INTERNAL_OTA_PACKAGE_TARGET)
