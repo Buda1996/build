@@ -513,7 +513,7 @@ function print_lunch_menu()
     done | column
 
     if [ "z${BlackBox_DEVICES_ONLY}" != "z" ]; then
-       echo "... and don't forget the blackbox!"
+       echo "... and don't forget the bacon!"
     fi
 
     echo
@@ -523,7 +523,7 @@ function brunch()
 {
     breakfast $*
     if [ $? -eq 0 ]; then
-       time mka blackbox
+       time mka bacon
     else
         echo "No such item in brunch menu. Try 'breakfast'"
         return 1
