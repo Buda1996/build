@@ -2340,7 +2340,7 @@ function cmka() {
     if [ ! -z "$1" ]; then
         for i in "$@"; do
             case $i in
-                blackbox|otapackage|systemimage)
+                bacon|otapackage|systemimage)
                     mka installclean
                     mka $i
                     ;;
